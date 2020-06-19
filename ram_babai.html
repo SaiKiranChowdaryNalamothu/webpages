@@ -41,7 +41,7 @@
 
 <p style="position:fixed;bottom:5px;right:5px;margin:0;color:yellow;background-color:red;display:inline;font-family:'lucida handwriting'">By Sai Kiran Nalamothu</p>
 
-<audio src="song.mp3" autoplay loop display:hidden>
+<audio id="song" src="song.mp3" autoplay loop display:hidden>
 
 </audio>
 
@@ -50,6 +50,14 @@
 
 </video>
 
-
+<script>
+  function myfun()
+  {
+    x=document.getElementById('song');
+    x.volume=1.0;
+    x.muted='false';
+  }
+  
+    </script>
   </body>
 </html>
